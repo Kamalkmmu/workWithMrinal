@@ -4,48 +4,51 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="bg-primary">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
    
-    <h1 id="title" > freeCodeCamp Survey Form</h1>
-   <p id="description">  Thank you for taking the time to help us improve the platform</p>
-   <form id="survey-form">
-     
-    <label for="name" id="name-label">Name</label>
-    <input id="name" type="text" placeholder="Enter Your Name"  required/>
-    <label for="email" id="email-label">Email</label>
-    <input id="email" type="email" placeholder="Enter Your Email" required/>
-    <label for="number" id="number-label">Number</label>
-    <input id="number" type="number" placeholder="Enter Your Mobile Number" min="7" max="12"/>
-    <select name="role" id="dropdown">
-      <option value="0">Select current role</option>
-      <option value="student">Student</option>
-      <option value="full-time-job">Full time job</option>
-      <option value="full-time-learner">Full time learner</option>
-      <option value="no">Prefer not to say</option>
-      <option value="other">Other</option>
-    </select>
+	<div class="container text-white">
+    	<h1 id="title" class="">freeCodeCamp Survey Form</h1>
+   		<p id="description" class="fst-italic">Thank you for taking the time to help us improve the platform</p>
+   		<form id="survey-form" class="bg-dark">
+			<label for="name" id="name-label" class="form-label">Name</label>
+			<input id="name" class="form-control" type="text" placeholder="Enter Your Name"  required/>
+			<label for="email" id="email-label" class="form-label">Email</label>
+			<input id="email" class="form-control" type="email" placeholder="Enter Your Email" required/>
+			<label for="number" id="number-label" class="form-label">Number</label>
+			<input id="number" class="form-control" type="number" placeholder="Enter Your Mobile Number" min="7" max="12"/>
+			<label class="input-group-text" for="dropdown">Which option best describes your current role?</label>
+			<select name="role" id="dropdown" class="form-select">
+				<option value="0">Select current role</option>
+				<option value="student">Student</option>
+				<option value="full-time-job">Full time job</option>
+				<option value="full-time-learner">Full time learner</option>
+				<option value="no">Prefer not to say</option>
+				<option value="other">Other</option>
+			</select>
 
-    <h3>Would you recommend freeCodeCamp to a friend?</h3>
-    <label for="recommend-yes">Definitly</label>
-    <input type="radio" name="recommend" id="recommend-yes" value="recommend-yes" /><br>
-    <label for="recommend-maybe">Maybe</label>
-    <input type="radio" name="recommend" id="recommend-maybe" value="recommend-maybe"/>
-    <br>
+			<h3>Would you recommend freeCodeCamp to a friend?</h3>
+			<label for="recommend-yes">Definitly</label>
+			<input type="radio" name="recommend" id="recommend-yes" value="recommend-yes" /><br>
+			<label for="recommend-maybe">Maybe</label>
+			<input type="radio" name="recommend" id="recommend-maybe" value="recommend-maybe"/>
+			<br>
 
-    <input type="checkbox" value="checkbox" id="bront-end-Projects" /> Front-end Projects 
-    <input type="checkbox" value="checkbox" id="back-end-Projects" />Back-end Projects
-    <br><br>
+			<input type="checkbox" value="checkbox" id="bront-end-Projects" /> Front-end Projects 
+			<input type="checkbox" value="checkbox" id="back-end-Projects" />Back-end Projects
+			<br><br>
 
-    Any comments or suggestions?<br>
-    <textarea></textarea>
+			Any comments or suggestions?<br>
+			<textarea></textarea>
 
-    <input type="submit" id="submit" />
+			<input type="submit" id="submit" />
 
-   </form>
-
+		</form>
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script  src="js/index.js"></script>
   </body>
 </html>
